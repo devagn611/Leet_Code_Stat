@@ -299,3 +299,12 @@ Show heatmap in the past 52 weeks.
 
 ## Credit
 This whole thing is depends Upon API which is created by [JacobLinCool](https://github.com/JacobLinCool)
+
+
+## 🔗 Links
+[![Portfolio](https://img.shields.io/badge/my_portfolio-000?logo=ko-fi&logoColor=white)](https://devagn-portfolio.onrender.com/)
+
+[![Freecodecamp](https://img.shields.io/badge/freecodecamp-1DA1F2?logo=freecodecamp&logoColor=white)](https://www.freecodecamp.org/devagn_maniya)
+
+[![Leet-Code](https://img.shields.io/badge/Leetcode-1DA1F2?logo=leetcode&logoColor=black)](https://www.leetcode.com/devagn_maniya)
+
