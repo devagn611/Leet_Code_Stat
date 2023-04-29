@@ -4,7 +4,7 @@ Show your dynamically generated LeetCode stats on your GitHub profile or your we
 
 LeetCode and LeetCode CN are both supported.
 
-[Playground: Try It Now]()
+[Playground: Try It Now](https://leet-code-stat.onrender.com/)
 
 [![LeetCode Stats](https://leetcard.jacoblin.cool/devagn_maniya?theme=unicorn&extension=activity)](https://leetcard.jacoblin.cool/devagn_maniya?theme=unicorn&extension=activity)
 
@@ -39,7 +39,7 @@ Want a hyperlink? Try this:
 
 The endpoint of this tool is:
 
-<>
+<https://leet-code-stat.onrender.com/>
 
 > The legacy one: <https://leetcode.card.workers.dev/>
 
