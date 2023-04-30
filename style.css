@@ -65,6 +65,7 @@ body {
   border-radius: 8px;
   box-shadow: 1px 0px 19px 1px;
   display: grid;
+  margin-top: 10px;
   margin-left: 16px;
 }
 h1 {
