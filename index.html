@@ -2,61 +2,66 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LeetCode Stats Card</title>
     <meta property="og:title" content="LeetCode Stats Card" />
   </head>
   <body>
-    <h1>LeetCode Stats Card</h1>
-    <p><strong>Username</strong></p>
-    <input id="username" placeholder="Your LeetCode Username" />
-    <p><strong>Theme</strong></p>
-    <select id="theme">
-      <option value="default">default</option>
-      <option value="dark" selected>dark</option>
-      <option value="auto">auto</option>
-      <option value="forest">forest</option>
-      <option value="wtf">wtf</option>
-      <option value="nord">nord</option>
-      <option value="unicorn">unicorn</option>
-    </select>
-    <p><strong>Font</strong></p>
-    <select id="font">
-      <option value="changa" selected>changa</option>
-      <option value="baloo">baloo</option>
-      <option value="source_code_pro">source_code_pro</option>
-      <option value="milonga">milonga</option>
-      <option value="patrick_hand">patrick_hand</option>
-      <option value="ruthie">ruthie</option>
-      <option value="">
-        You can also use some "system font". Fallback: ("Segoe UI", "PingFang
-        SC", Ubuntu, Sans-Serif)
-      </option>
-    </select>
-    <p><strong>Extension</strong></p>
-    <select id="extension">
-      <option value="" selected>No Extension</option>
-      <option value="activity">Activity</option>
-      <option value="contest">Contest</option>
-      <option value="heatmap">Heatmap</option>
-    </select>
-    <p><strong>Source</strong></p>
-    <select id="site">
-      <option value="us" selected>Source: LeetCode(Global)</option>
-      <option value="cn">Source: LeetCode CN</option>
-    </select>
-    <div>
-      <button id="submit-button" onclick="preview()">Preview</button>
-      <button onclick="go()">Iframe</button>
-      <button onclick="md()">Markdown(Readme Github)</button>
+    <div class="container">
+      <h1>LeetCode Stats Card</h1>
+      <p><strong>Username</strong></p>
+      <input id="username" placeholder="Your LeetCode Username" />
+      <p><strong>Theme</strong></p>
+      <select id="theme">
+        <option value="default">default</option>
+        <option value="dark" selected>dark</option>
+        <option value="auto">auto</option>
+        <option value="forest">forest</option>
+        <option value="wtf">wtf</option>
+        <option value="nord">nord</option>
+        <option value="unicorn">unicorn</option>
+      </select>
+      <p><strong>Font</strong></p>
+      <select id="font">
+        <option value="changa" selected>changa</option>
+        <option value="baloo">baloo</option>
+        <option value="source_code_pro">source_code_pro</option>
+        <option value="milonga">milonga</option>
+        <option value="patrick_hand">patrick_hand</option>
+        <option value="ruthie">ruthie</option>
+        <option value="">
+          You can also use some "system font". Fallback: ("Segoe UI", "PingFang
+          SC", Ubuntu, Sans-Serif)
+        </option>
+      </select>
+      <p><strong>Extension</strong></p>
+      <select id="extension">
+        <option value="" selected>No Extension</option>
+        <option value="activity">Activity</option>
+        <option value="contest">Contest</option>
+        <option value="heatmap">Heatmap</option>
+      </select>
+      <p><strong>Source</strong></p>
+      <select id="site">
+        <option value="us" selected>Source: LeetCode(Global)</option>
+        <option value="cn">Source: LeetCode CN</option>
+      </select>
+      <div>
+        <button id="submit-button" onclick="preview()">Preview</button>
+        <button onclick="go()">Iframe</button>
+        <button onclick="md()">Markdown(Readme Github)</button>
+      </div>
+      <div><img id="preview" src="/devagn_maniya" /></div>
+      <div>
+        <a target="_blank" href="https://github.com/devagn611"
+          >View on GitHub</a
+        >
+      </div>
+      <div style="height: 20px"></div>
+      
+      
     </div>
-    <div><img id="preview" src="/devagn_maniya" /></div>
-    <div style="height: 20px"></div>
-    <div>
-      <a target="_blank" href="https://github.com/devagn611">View on GitHub</a>
-    </div>
-    
     <script src="script.js"></script>
   </body>
 </html>
