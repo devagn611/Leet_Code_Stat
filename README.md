@@ -41,7 +41,7 @@ The endpoint of this tool is:
 
 <https://leet-code-stat.onrender.com/>
 
-> The legacy one: <https://leetcode.card.workers.dev/>
+> The legacy one: <https://leet-code-stat.devagn.workers.dev>
 
 ### Options
 
