@@ -39,6 +39,13 @@ Want a hyperlink? Try this:
 
 The endpoint of this tool is:
 
+You got new endpoint to get the direct output of the leetcode stat 
+Here is how:
+https://leetcode-stat.onrender.com/?username=your-username
+
+Here is how you can get the direct output of the Leet Code Stat
+https://leetcode-stat.onrender.com/?username=devagn_maniya
+
 <https://leetcode-stat.onrender.com/>
 
 > The legacy one: <https://leet-code-stat.devagn.workers.dev>
