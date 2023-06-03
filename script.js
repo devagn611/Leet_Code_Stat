@@ -1,3 +1,27 @@
+//parse url code
+function getQueryParam(name) {
+  name = name.replace(/[\[\]]/g, "\\$&");
+  const regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)");
+  const results = regex.exec(window.location.href);
+  if (!results) return null;
+  if (!results[2]) return "";
+  return decodeURIComponent(results[2].replace(/\+/g, " "));
+}
+
+// Function to set the value of an input element
+function setInputValue(selector, value) {
+  const input = document.querySelector(selector);
+  if (input) {
+    input.value = value;
+  }
+}
+
+// Retrieve the username from the URL query parameter and set the input value
+const username = getQueryParam("username");
+if (username) {
+  setInputValue("#username", username);
+}
+
 preview();
 function url() {
   if (!value("username"))
@@ -31,6 +55,15 @@ function md() {
 function value(id) {
   return document.querySelector("#" + id).value.trim() || "";
 }
+
+const toggleButton = document.getElementById("dark-mode");
+const body = document.body;
+const container = document.querySelector(".container");
+
+toggleButton.addEventListener("click", () => {
+  body.classList.toggle("dark");
+  container.classList.toggle("dark");
+});
 
 // window.onload = function() {
 //     document.getElementById("submit-button").click();
