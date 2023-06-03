@@ -1,1 +1,283 @@
-@import url(https://fonts.googleapis.com/css2?family=Ubuntu&display=swap);body,button,html,input,select{font-family:Ubuntu,sans-serif}div,h1{margin:8px 0}button,label{cursor:pointer}body,html{width:50%;margin:auto}.container{width:410px;height:100%;border-radius:8px;box-shadow:0 0 1px 2px;display:grid}input,select{width:320px;margin:4px 0;padding:4px;border-radius:6px}button{background-color:#585b6e;border:none;color:#fff;padding:7px;text-align:center;text-decoration:none;display:inline-block;font-size:12px;margin:10px;border-radius:20px;transition-duration:.4s;box-shadow:0 4px 8px 0 rgba(0,0,0,.2),0 6px 20px 0 rgba(0,0,0,.19)}button:hover{background-color:#3e8e41}div{width:320px;display:flex;flex-direction:row;justify-content:center;align-items:center}img{width:100%;min-height:128px}.dark,.dark option{background-color:#1c1c1c;color:#f1f1f1}.dark input,.dark select{background-color:#3d3d3d;color:#f1f1f1}.darkbutton{display:flex;flex-direction:row}#dark-mode{margin:0;width:33px}label{position:relative;width:40px;height:18px;display:block;background:#d9d9d9;border-radius:100px;box-shadow:inset 0 5px 15px rgba(0,0,0,.3),inset 0 -5px 15px rgba(255,255,255,.3)}label:after{content:"";position:absolute;height:16px;width:16px;background:#f2f2f2;border-radius:50%;top:1px;left:1px;transition:.5s;box-shadow:0 5px 10px rgba(0,0,0,.2)}#dark-mode:checked~label:after{left:47px;transform:translateX(-156%);background:linear-gradient(180deg,#777,#3a3a3a)}input:checked~body{background:#242424}@media only screen and (max-width:600px){body,button,html,input,select{font-family:Ubuntu,sans-serif}div,input,select{width:320px;margin:8px 0}div,h1,input,select{margin:8px 0}button,label{cursor:pointer}body,html{display:flex;width:100%;margin:auto;height:100%}.container{width:380px;height:128%;background:#fff;border-radius:8px;box-shadow:0 0 1px 2px;display:grid;margin:60px 6px 6px}input,select{padding:6px;border-radius:12px}button{background-color:#585b6e;border:none;color:#fff;padding:7px;text-align:center;text-decoration:none;display:inline-block;font-size:12px;margin:10px;border-radius:20px;transition-duration:.4s;box-shadow:0 4px 8px 0 rgba(0,0,0,.2),0 6px 20px 0 rgba(0,0,0,.19)}button:hover{background-color:#3e8e41}div{display:flex;flex-direction:row;justify-content:center;align-items:center}img{width:100%;min-height:128px}.dark,.dark option{background-color:#1c1c1c;color:#f1f1f1}.dark input,.dark select{background-color:#3d3d3d;color:#f1f1f1}.darkbutton{display:flex;flex-direction:row}#dark-mode{margin:0;width:33px}label{position:relative;width:40px;height:18px;display:block;background:#d9d9d9;border-radius:100px;box-shadow:inset 0 5px 15px rgba(0,0,0,.3),inset 0 -5px 15px rgba(255,255,255,.3)}label:after{content:"";position:absolute;height:16px;width:16px;background:#f2f2f2;border-radius:50%;top:1px;left:1px;transition:.5s;box-shadow:0 5px 10px rgba(0,0,0,.2)}#dark-mode:checked~label:after{left:47px;transform:translateX(-156%);background:linear-gradient(180deg,#777,#3a3a3a)}input:checked~body{background:#242424}}
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+
+html,
+body {
+  margin-top: 10px;
+  width: 50%;
+  margin: auto;
+  /* height: 100%; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  font-family: "Ubuntu", sans-serif;
+}
+
+.container {
+  width: 410px;
+  height: 100%;
+  border-radius: 8px;
+  box-shadow: 0px 0px 1px 2px;
+  display: grid;
+}
+
+h1 {
+  margin: 8px 0;
+}
+
+input,
+select {
+  font-family: "Ubuntu", sans-serif;
+  width: 320px;
+  margin: 4px 0;
+  padding: 4px;
+  border-radius: 6px;
+}
+
+/* button {
+background-color: #fff;
+border-radius: 4px;
+width: 140px;
+margin: 8px;
+} */
+
+button {
+  font-family: "Ubuntu", sans-serif;
+  background-color: #585b6e;
+  border: none;
+  color: white;
+  padding: 7px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 20px;
+  transition-duration: 0.4s;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+button:hover {
+  background-color: #3e8e41;
+  /* Dark green */
+}
+
+div {
+  width: 320px;
+  margin: 8px 0;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  width: 100%;
+  min-height: 128px;
+}
+
+.dark {
+  background-color: #1c1c1c;
+  color: #f1f1f1;
+}
+
+.dark select,
+.dark input {
+  background-color: #3d3d3d;
+  color: #f1f1f1;
+}
+
+.dark option {
+  background-color: #1c1c1c;
+  color: #f1f1f1;
+}
+
+.darkbutton {
+  display: flex;
+  flex-direction: row;
+}
+
+#dark-mode {
+  margin: 0;
+  width: 33px;
+}
+
+label {
+  position: relative;
+  width: 40px;
+  height: 18px;
+  display: block;
+  background: #d9d9d9;
+  border-radius: 100px;
+  cursor: pointer;
+  box-shadow: inset 0px 5px 15px rgba(0, 0, 0, 0.3),
+    inset 0px -5px 15px rgba(255, 255, 255, 0.3);
+}
+
+label:after {
+  content: "";
+  position: absolute;
+  height: 16px;
+  width: 16px;
+  background: #f2f2f2;
+  border-radius: 50%;
+  top: 1px;
+  left: 1px;
+  transition: 0.5s;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+#dark-mode:checked~label:after {
+  left: 47px;
+  transform: translateX(-156%);
+  background: linear-gradient(180deg, #777, #3a3a3a);
+}
+
+input:checked~body {
+  background: #242424;
+}
+
+@media only screen and (max-width: 600px) {
+
+  html,
+  body {
+    display: flex;
+    /* margin-top: 10px; */
+    width: 100%;
+    margin: auto;
+    height: 100%;
+    /* justify-content: center; */
+    /* align-items: center; */
+    font-family: "Ubuntu", sans-serif;
+  }
+
+  .container {
+
+    width: 380px;
+    height: 128%;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 0px 1px 2px;
+    display: grid;
+    margin: 6px;
+    margin-top: 60px;
+  }
+
+  h1 {
+    margin: 8px 0;
+  }
+
+  input,
+  select {
+    font-family: "Ubuntu", sans-serif;
+    width: 320px;
+    margin: 8px 0;
+    padding: 6px;
+    border-radius: 12px;
+  }
+
+  /* button {
+background-color: #fff;
+border-radius: 4px;
+width: 140px;
+margin: 8px;
+}*/
+
+  button {
+    font-family: "Ubuntu", sans-serif;
+    background-color: #585b6e;
+    border: none;
+    color: white;
+    padding: 7px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 20px;
+    transition-duration: 0.4s;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  button:hover {
+    background-color: #3e8e41;
+    /* Dark green */
+  }
+
+  div {
+    width: 320px;
+    margin: 8px 0;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  img {
+    width: 100%;
+    min-height: 128px;
+  }
+
+  .dark {
+    background-color: #1c1c1c;
+    color: #f1f1f1;
+  }
+
+  .dark select,
+  .dark input {
+    background-color: #3d3d3d;
+    color: #f1f1f1;
+  }
+
+  .dark option {
+    background-color: #1c1c1c;
+    color: #f1f1f1;
+  }
+
+  .darkbutton {
+    display: flex;
+    flex-direction: row;
+  }
+
+  #dark-mode {
+    margin: 0;
+    width: 33px;
+  }
+
+  label {
+    position: relative;
+    width: 40px;
+    height: 18px;
+    display: block;
+    background: #d9d9d9;
+    border-radius: 100px;
+    cursor: pointer;
+    box-shadow: inset 0px 5px 15px rgba(0, 0, 0, 0.3),
+      inset 0px -5px 15px rgba(255, 255, 255, 0.3);
+  }
+
+  label:after {
+    content: "";
+    position: absolute;
+    height: 16px;
+    width: 16px;
+    background: #f2f2f2;
+    border-radius: 50%;
+    top: 1px;
+    left: 1px;
+    transition: 0.5s;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  #dark-mode:checked~label:after {
+    left: 47px;
+    transform: translateX(-156%);
+    background: linear-gradient(180deg, #777, #3a3a3a);
+  }
+
+  input:checked~body {
+    background: #242424;
+  }
+}
