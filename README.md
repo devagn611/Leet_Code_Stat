@@ -48,7 +48,7 @@ https://leetcode-stat.onrender.com/?username=devagn_maniya
 
 <https://leetcode-stat.onrender.com/>
 
-> The legacy one: <https://leet-code-stat.devagn.workers.dev>
+> The legacy one: <https://leetcode-stat.devagn.workers.dev>
 
 ### Options
 
