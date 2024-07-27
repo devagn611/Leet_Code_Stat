@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>404 - Page Not Found</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @keyframes bounce {
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-20px);
+        }
+      }
+      .bounce-animation {
+        animation: bounce 2s infinite;
+      }
+    </style>
+  </head>
+  <body
+    class="bg-gradient-to-r from-purple-500 to-pink-500 min-h-screen flex items-center justify-center flec flex-col"
+  >
+    <div class="text-white text-opacity-50 animate-pulse text-4xl">
+      ¯\_(ツ)_/¯
+    </div>
+    <div class="text-center">
+      <h1 class="text-9xl font-bold text-white mb-8">
+        <span class="inline-block bounce-animation">4</span>
+        <span
+          class="inline-block bounce-animation"
+          style="animation-delay: 0.2s"
+          >0</span
+        >
+        <span
+          class="inline-block bounce-animation"
+          style="animation-delay: 0.4s"
+          >4</span
+        >
+      </h1>
+      <p class="text-2xl text-white mb-8">
+        Oops! Looks like this page took a vacation without telling us.
+      </p>
+      <a
+        href="/"
+        class="bg-white text-purple-600 px-6 py-3 rounded-full font-bold text-lg hover:bg-purple-100 transition duration-300 ease-in-out transform hover:scale-105"
+      >
+        Take Me Home
+      </a>
+    </div>
+  </body>
+</html>

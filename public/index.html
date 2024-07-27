@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LeetCode Stats Card</title>
+    <meta property="og:title" content="LeetCode Stats Card" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-50 dark:bg-gray-900 transition-colors duration-300">
+    <nav class="bg-white border-gray-200 dark:bg-gray-900">
+      <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+        <a href="" class="flex items-center space-x-3 rtl:space-x-reverse ">
+          <img
+          loading="lazy"
+            src="https://devagn-portfolio.onrender.com/assets/images/my-avatar.png"
+            class="h-12" alt="Leet Code Stat" />
+          <span class="self-center text-1xl font-semibold whitespace-nowrap dark:text-white">
+            LeetCode Stats Card</span>
+        </a>
+        <button data-collapse-toggle="navbar-cta" type="button"
+          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          aria-controls="navbar-cta" aria-expanded="false">
+          <span class="sr-only">Open main menu</span>
+          <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M1 1h15M1 7h15M1 13h15" />
+          </svg>
+        </button>
+        <!-- <div
+            class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse gap-3"
+          >
+            <a
+              href="https://github.com/devagn611"
+              target="_blank"
+              class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+            >
+              Github &rarr;
+            </a>
+            <button
+              id="themeToggle"
+              class="p-2 rounded-full bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-white"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"
+                />
+              </svg>
+            </button>
+          </div> -->
+        <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-cta">
+          <ul
+            class="flex flex-col items-center font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+            <li>
+              <a href="/"
+              class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Home</a>
+            </li>
+            <li>
+              <a href="/api"
+              class="block py-2 px-3 md:p-0  bg-blue-700 rounded md:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white"
+               >API</a>
+            </li>
+            <li>
+              <a href="#"
+                class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About</a>
+            </li>
+            <!-- <li>
+              <a href="#"
+                class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
+            </li> -->
+            <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse gap-3">
+              <a href="https://github.com/devagn611" target="_blank"
+                class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                Github &rarr;
+              </a>
+              <button id="themeToggle"
+                class="p-2 rounded-full bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+                </svg>
+              </button>
+            </div>
+          </ul>
+  
+        </div>
+      </div>
+    </nav>
+
+    <div class="container mx-auto px-4 py-8 max-w-3xl">
+      <div class="flex justify-between items-center mb-6">
+        <p class="text-lg font-semibold text-gray-700 dark:text-gray-300">
+          Username
+        </p>
+        <div class="flex items-center">
+          <span
+            class="mr-3 text-sm font-medium text-gray-900 dark:text-gray-300"
+            >Theme</span
+          >
+          <label class="relative inline-flex items-center cursor-pointer">
+            <input type="checkbox" id="dark-mode" class="sr-only peer" />
+            <div
+              class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"
+            ></div>
+          </label>
+        </div>
+      </div>
+
+      <input
+        id="username"
+        placeholder="Your LeetCode Username"
+        class="w-full p-2 mb-4 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-800 dark:text-white dark:border-gray-600"
+      />
+
+      <div class="mb-4">
+        <p class="text-lg font-semibold mb-2 text-gray-700 dark:text-gray-300">
+          Theme
+        </p>
+        <select
+          id="theme"
+          class="w-full p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-800 dark:text-white dark:border-gray-600"
+        >
+          <option value="default">default</option>
+          <option value="dark" selected>dark</option>
+          <option value="auto">auto</option>
+          <option value="forest">forest</option>
+          <option value="wtf">wtf</option>
+          <option value="nord">nord</option>
+          <option value="unicorn">unicorn</option>
+        </select>
+      </div>
+
+      <div class="mb-4">
+        <p class="text-lg font-semibold mb-2 text-gray-700 dark:text-gray-300">
+          Font
+        </p>
+        <select
+          id="font"
+          class="w-full p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-800 dark:text-white dark:border-gray-600"
+        >
+          <option value="changa" selected>changa</option>
+          <option value="baloo">baloo</option>
+          <option value="source_code_pro">source_code_pro</option>
+          <option value="milonga">milonga</option>
+          <option value="patrick_hand">patrick_hand</option>
+          <option value="ruthie">ruthie</option>
+          <option value="">System font</option>
+        </select>
+      </div>
+
+      <div class="mb-4">
+        <p class="text-lg font-semibold mb-2 text-gray-700 dark:text-gray-300">
+          Extension
+        </p>
+        <select
+          id="extension"
+          class="w-full p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-800 dark:text-white dark:border-gray-600"
+        >
+          <option value="" selected>No Extension</option>
+          <option value="activity">Activity</option>
+          <option value="contest">Contest</option>
+          <option value="heatmap">Heatmap</option>
+        </select>
+      </div>
+
+      <div class="mb-6">
+        <p class="text-lg font-semibold mb-2 text-gray-700 dark:text-gray-300">
+          Source
+        </p>
+        <select
+          id="site"
+          class="w-full p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-800 dark:text-white dark:border-gray-600"
+        >
+          <option value="us" selected>Source: LeetCode(Global)</option>
+          <option value="cn">Source: LeetCode CN</option>
+        </select>
+      </div>
+
+      <div class="flex justify-between mb-6">
+        <button
+          id="submit-button"
+          class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline transition duration-300"
+        >
+          Preview
+        </button>
+        <button
+          id="go-button"
+          class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline transition duration-300"
+        >
+          Iframe
+        </button>
+        <button
+          id="markdown-button"
+          class="bg-purple-500 hover:bg-purple-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline transition duration-300"
+        >
+          Markdown
+        </button>
+      </div>
+
+      <div id="loading" class="hidden flex justify-center items-center mb-6">
+        <div
+          class="animate-spin rounded-full h-32 w-32 border-t-2 border-b-2 border-blue-500"
+        ></div>
+      </div>
+
+      <div class="mb-6">
+        <div id="preview-container" class="w-full rounded-lg shadow-lg">
+          <!-- The embed tag will be inserted here -->
+        </div>
+      </div>
+
+      <div class="text-center">
+        <a
+          href="https://github.com/devagn611"
+          target="_blank"
+          class="text-blue-500 hover:text-blue-600 dark:text-blue-400 dark:hover:text-blue-300"
+          >View on GitHub</a
+        >
+      </div>
+    </div>
+
+    <div class="flex items-center justify-center p-4">
+      <div
+        class="flex flex-col md:flex-row items-center p-6 bg-white dark:bg-black backdrop-blur-md rounded-lg shadow-lg border border-white/30 max-w-md mx-4"
+      >
+        <img
+          loading="lazy"
+          src="https://avatars.githubusercontent.com/u/99108074?v=4"
+          alt="Profile Picture"
+          class="w-20 h-20 rounded-full object-cover mb-4 md:mb-0 md:mr-4"
+        />
+        
+        <div class="text-center md:text-left text-black dark:text-white overflow-hidden">
+          <h1>Build & Design</h1>
+          <h2 class="text-xl font-semibold mb-2">Maniya Devagn</h2>
+          <p class="text-sm mb-2">devagnmaniya611@gmail.com</p>
+          <!-- <a
+            href="https://example.com"
+            target="_blank"
+            class="text-blue-400 hover:underline"
+            >Website</a
+          > -->
+        </div>
+      </div>
+    </div>
+    
+
+    <script src="./helper.js"></script>
+  </body>
+</html>
