@@ -6,7 +6,7 @@ LeetCode and LeetCode CN are both supported.
 
 [Playground: Try It Now](https://leet-card-generator.onrender.com/)
 
-[![LeetCode Stats](https://leet-card-generator.onrender.com/api/cardgen?username=devagn_maniya&theme=unicorn&extension=activity&font=changa)](https://leet-card-generator.onrender.com/api/cardgen?username=devagn_maniya&theme=unicorn&extension=activity&font=changa)
+[![LeetCode Stats_example](https://leet-card-generator.onrender.com/api/cardgen?username=devagn_maniya&theme=unicorn&extension=activity&font=changa)](https://leet-card-generator.onrender.com/api/cardgen?username=devagn_maniya&theme=unicorn&extension=activity&font=changa)
 
 ## Features
 
