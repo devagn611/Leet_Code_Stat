@@ -13,7 +13,7 @@ LeetCode and LeetCode CN are both supported.
 - 📈 Clean and simple LeetCode stats, for both `us` and `cn` sites
 - 🎨 Multiple themes and fonts - [Theme](#theme-default-lightdark), [Font](#font-default-baloo_2)
 - 🪄 Fully customizable using CSS - [Custom Stylesheets](#sheets-default-)
-- ⚡️ Fast and global edge network - [Cloudflare Workers](https://workers.cloudflare.com/)
+- ⚡️ Fast and global edge network - [Cloudflare Workers](https://leet-card-gen.devagn.workers.dev/)
 - 🚫 No tracking, controlable cache - [Cache](#cache-default-60)
 - 🍀 Open source - [MIT License](./LICENSE)
 - ⚙️ Extended-cards: `activity`, `contest`, `heatmap`
@@ -33,11 +33,15 @@ Endpoints
 
 ### Main Data Fetcher:
 
+Workers: https://leet-card-gen.devagn.workers.dev/
+
+https://leet-card-gen.devagn.workers.dev?username=YOUR_LEETCODE_USERNAME 
+
+Example:
+https://leet-card-gen.devagn.workers.dev?username=devagn_maniya 
 
 
-
-
-Endpoints
+Extras for Card Generator
 ---------
 
 ### GET /api/cardgen 
@@ -88,7 +92,7 @@ Examples
 ### Generating a card image:
 
     
-    fetch('/api/cardgen?username=devagn_maniya&theme=dark&font=changa')
+    fetch('https://leet-card-generator.onrender.com/api/cardgen?username=devagn_maniya&theme=dark&font=changa')
         .then(response => response.text())
         .then(data => console.log(data))
         .catch(error => console.error('Error:', error));
@@ -97,7 +101,7 @@ Examples
 ### Getting embed code:
 
     
-    fetch('/api/cardgenDetail?username=devagn_maniya&theme=dark&font=changa')
+    fetch('https://leet-card-generator.onrender.com/api/cardgenDetail?username=devagn_maniya&theme=dark&font=changa')
         .then(response => response.json())
         .then(data => {
             console.log('Embed HTML:', data.embedHtml);
@@ -109,7 +113,7 @@ Examples
 ### Getting a preview:
 
     
-    fetch('/api/preview?username=devagn_maniya&theme=dark&font=changa')
+    fetch('https://leet-card-generator.onrender.com/api/preview?username=devagn_maniya&theme=dark&font=changa')
         .then(response => response.text())
         .then(data => console.log(data))
         .catch(error => console.error('Error:', error));
@@ -128,6 +132,7 @@ If required parameters are missing or an error occurs, the API will return a JSO
 
 ## Credit
 [Maniya Devagn](https://github.com/devagn611)
+
 [JacobLinCool](https://github.com/JacobLinCool)
 
 
