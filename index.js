@@ -5,7 +5,7 @@ const path = require("path");
 const leetCardController = require('./controllers/leetCardController');
 
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
@@ -13,15 +13,15 @@ app.use(express.static(path.join(__dirname, "public")));
 
 // Main routes
 app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, "public/index.html"));
+  res.redirect('https://leet-code-stat.vercel.app/');
 });
 
 app.get("/home", (req, res) => {
-  res.sendFile(path.join(__dirname, "public/index.html"));
+   res.redirect('https://leet-code-stat.vercel.app/');
 });
 
 app.get("/api", (req, res) => {
-  res.sendFile(path.join(__dirname, "public/api.html"));
+   res.redirect('https://leet-code-stat.vercel.app/api');
 });
 
 // API routes
